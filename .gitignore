@@ -19,6 +19,9 @@
 /test/files/speclib/instrumented.jar
 /tools/*.jar
 
+# Custom
+temp.txt
+
 # Developer specific properties
 /build.properties
 /buildcharacter.properties
