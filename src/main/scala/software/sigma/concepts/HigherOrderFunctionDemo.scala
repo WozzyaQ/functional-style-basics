@@ -1,7 +1,7 @@
 package software.sigma.concepts
 
 import java.time.LocalDate
-import scala.math.{Pi, cos}
+import scala.math.{Pi, cos, exp, sqrt}
 
 object HigherOrderFunctionDemo extends App {
   // takes function and returns it's first derivative
@@ -36,4 +36,14 @@ object HigherOrderFunctionDemo extends App {
     .toMap
 
   println(groupedAttendeesAmountByDates)
+
+  // function composition
+  def compose[A,B,C] (f: B => C, g: A => B): A => C = {
+    a => f(g(a))
+  }
+
+  def f(arg: Double): Double = sqrt(arg).toInt
+  def g(arg: Double): Double = exp(arg).toInt
+
+  println(compose(f,g)(23))
 }
