@@ -41,8 +41,8 @@ Some good news:
 * Elegant solutions for tree-based structures (because of tree nature)
 
 ## Eager vs Lazy evaluations
-Eager evaluations - expressions are evaluated immediately.
-Lazy or delayed evaluations - computed on demand.
+`Eager` evaluations - expressions are evaluated immediately.
+`Lazy` or `delayed` evaluations - computed on demand.
 
 * Using lazy evaluations we are getting overhead with keeping some kind of wrappers for delayed values.
 * Lazy evaluations could lead us to loss of control (we don't know when exactly some evaluations happened, so we can create a hard-to-catch bug)
